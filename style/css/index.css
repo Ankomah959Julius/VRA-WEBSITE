@@ -1,85 +1,57 @@
-body{
-    margin: 0;
-    padding: 0;
-    height: auto;
-}
-.menu_bar{
-    background-color:blue;
-    padding: 10px; 
-    color: white;
-    text-align: right;
-    border: 2px solid;
-    height: 30px;
-    width: 100%;
-    font-family: sans-serif, arial;
-    font-size: large;
-    margin-top: auto;
-}
-.heder-container{
+
+header{
     display: flex;
+    position: absolute;
+    top:0;
+    left: 0;
+    width:100%;
+    background-color: crimson;
+    color: white;
+    justify-content: space-between;
     align-items: center;
-    gap: 20px;
-    padding: 10px 20px;
+    z-index: 1000;
+    padding: 15px 15px;
 }
-.logo{
-    width: 80px;
-    height: auto;
-}
-.vra-title{
-    font-size: 24px;
+.container{
+    font-family: 35px;
     font-weight: bold;
-    color: #004A99;
-    margin: 0;
-}
-
-nav a{
     color: white;
-    font-weight: bold;
-    text-decoration: none;
-    display:inline-block;
-    padding: 10px 15px;
-}
-nav a::hover{
-    background-color:#28A745;
-    color: white;
-    border-radius: 5px; 
-}
-footer{
-    background-color: blue;
-    padding: 10px;
-    text-align: right;
-    border: 2px solid;
-    height: 30px;
-    width: 100%;
-    color: white;
-    margin-top: 100%;
-
-}
-.main-layout{
     display: flex;
-    justify-content: center;
-    padding: 20px;
-    height: 500px;
-    gap: 20px;
-
+     align-items: center;
 }
-.left-box{
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    background-color: #F0F0F0;
-    padding: 1Opx;
-    margin-right: auto;
+.logo img{
+    height: 70px;
+    width: auto;
 }
-.middle-box{
-    border-radius: 8px;
-    padding: 1Opx;
-    background-color: #e9f5ff;
-    border: 1px solid #ccc;
+.logo_text{
+   
 }
-.right-box{
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    background-color: #F0F0F0;
-    padding: 1Opx;
-    margin-left: auto;
+nav ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+nav a{
+    margin-right: 30px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-weight: bold;
+}
+nav a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background-color: blue;
+    transition:width 0.3s ease ;
+}
+nav a:hover{
+    color: blue;
+}
+nav a:hover::after{
+    width: 100%;
 }
