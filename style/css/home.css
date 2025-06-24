@@ -64,48 +64,20 @@ nav a:hover{
 nav a:hover::after{
     width: 100%;
 }
-.hero{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 60px 50px;
-    background-color: lightgray;
-    flex-wrap: wrap;
-    margin-top: 80px;
-    padding: 80px;
-    margin-right: 0;
-}
-.hero-text{
-    max-width: 50%;
-}
-.hero-text h1{
-    font-size: 3rem;
-    color: navy;
-    margin-bottom: 20px;
-}
-.hero-text p{
-    color: dimgray;
-    font-size: 1.2rem;
-    margin-bottom: 30px;
 
-}
-.more-info{
-    background-color: navy;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    padding: 12px 25px;
-    transition: background-color 0.3s ease;
-}
-.more-info:hover{
-    background-color: steelblue;
-}
-.hero-img img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*footer*/
 
 .site-footer{
